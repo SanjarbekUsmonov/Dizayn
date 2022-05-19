@@ -4,9 +4,9 @@
         <div class="content bg-grey-1">
              <!-- login boshlanishi -->
             <div class="row  justify-start items-center content-center">
-              <q-icon size="28px " name="fas fa-user"/>
+                 <q-icon size="28px " name="fas fa-user"/>
               <div class="q-ml-md text-h4 text-weight-bolder">
-                 Registor
+                  Registor
               </div>
               <div class="q-mt-md">
                   Please fill the form below with correct detail to register.
@@ -16,19 +16,24 @@
            <!-- login tugashi -->
                 <!-- inputlar -->
                 <div class="q-mt-md">
-                    <label  for="username"><strong>Email/Username</strong></label> <br>
-                    <input class=" username" type="text" v-model="username" name="username">
+                    <form>
+                       <label  for="username"><strong>Email/Username</strong></label> <br>
+                       <input class=" username" type="text" v-model="username" name="username">
+                    </form>
                 </div>
+
                 <div  class="q-mt-md">
-                   <label for="password"><strong>Password</strong></label> <br>
-                   <input class=" username" type="password" v-model="paswword" name="password">
+                    <form>
+                       <label for="password"><strong>Password</strong></label> <br>
+                       <input class=" username" type="password" v-model="paswword" name="password">
+                    </form>
                 </div>
                 <!-- inputlar tugashi -->
 
                 <div class=" q-mt-xl row  justify-between items-center content-center">
-                <q-checkbox  v-model="teal" label="Я не робот" color="teal" />
-                 <q-btn color="red" icon-right="send" label="Login" />
-              </div>
+                    <q-checkbox  v-model="teal" label="Я не робот" color="teal" />
+                    <q-btn color="red" icon-right="send" label="Login" />
+                </div>
 
           </div>
       </div>

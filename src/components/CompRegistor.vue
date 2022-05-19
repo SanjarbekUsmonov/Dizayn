@@ -16,42 +16,55 @@
            <!-- registor boshlanishi tugashi -->
 
             <!-- inputlar boshlanishi -->
-            <div class="q-mt-lg  row  justify-between items-start content-start">
-                <div>
-                  <label for="username"><strong>First Name*</strong></label> <br>
-                  <input class="first-name" type="text" v-model="Fname" name="Fname">
+                <div class="q-mt-lg  row  justify-between items-start content-start">
+                    <div>
+                        <form>
+                          <label for="username"><strong>First Name*</strong></label> <br>
+                          <input class="first-name" type="text" v-model="Fname" name="Fname">
+                        </form>
+                    </div>
+                    <div>
+                      <form>
+                        <label for="username"><strong>Last Name*</strong></label><br>
+                        <input class="last-name" type="text" v-model="Lname" name="Lname">
+                      </form>
+                    </div>
                 </div>
-                <div>
-                  <label for="username"><strong>Last Name*</strong></label><br>
-                  <input class="last-name" type="text" v-model="Lname" name="Lname">
-                </div>
-            </div>
 
                   <div class="q-mt-md">
-                    <label  for="username"><strong>Username*</strong></label> <br>
-                    <input class=" username" type="text" v-model="username" name="username">
+                      <form>
+                         <label  for="username"><strong>Username*</strong></label> <br>
+                         <input class=" username" type="text" v-model="username" name="username">
+                      </form>
                   </div>
                   <div  class="q-mt-md">
-                   <label for="email"><strong>Email</strong></label> <br>
-                   <input class=" username" type="text" v-model="email" name="email">
+                      <form >
+                         <label for="email"><strong>Email</strong></label> <br>
+                         <input class=" username" type="text" v-model="email" name="email">
+                      </form>
                   </div>
 
-             <div class=" row  justify-between items-start content-start">
-                  <div class="q-mt-md">
-                   <label for="password"><strong>Password</strong></label> <br>
-                   <input class="first-name" type="password" v-model="pwd" name="pdw">
-                  </div>
-                  <div class="q-mt-md">
-                   <label for="password"><strong>Confirm Password</strong></label><br>
-                   <input class="last-name" type="password" v-model="pwd2" name="pdw">
-                 </div>
-             </div>
+                <div class=" row  justify-between items-start content-start">
+                      <div class="q-mt-md">
+                          <form>
+                            <label for="password"><strong>Password</strong></label> <br>
+                            <input class="first-name" type="password" v-model="pwd" name="pdw">
+                          </form>
+                      </div>
+                      <div class="q-mt-md">
+                          <form>
+                            <label for="password"><strong>Confirm Password</strong></label><br>
+                            <input class="last-name" type="password" v-model="pwd2" name="pdw">
+                          </form>
+                    </div>
+                </div>
                 <!-- inputlar  tugashi -->
 
-              <div class=" q-mt-xl row  justify-between items-center content-center">
-                <q-checkbox  v-model="teal" label="Я не робот" color="teal" />
+               <div class=" q-mt-xl row  justify-between items-center content-center">
+                 <q-checkbox  v-model="teal" label="Я не робот" color="teal" />
                  <q-btn color="red" icon-right="send" label="Register" />
               </div>
+
         </div>
     </div>
   </div>

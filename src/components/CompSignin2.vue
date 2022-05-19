@@ -10,8 +10,10 @@
                Complete your registration with
             </div> <br>
 
-               <q-input outlined  v-model="ph" placeholder="Placeholder" :dense="dense" /> <br>
-               <q-input outlined  v-model="ph" placeholder="Placeholder" :dense="dense" /><br>
+              <form>
+                <q-input outlined type="email" v-model="email" placeholder="Enter your email addres" :dense="dense" /> <br>
+                <q-input outlined type="password" v-model="pwd" placeholder="Enter your password" :dense="dense" /><br>
+              </form>
 
               <q-btn style="width: 100%;" padding="18px" color="secondary" label="Send Message" />
 
@@ -25,8 +27,14 @@
   </div>
 </template>
 <script>
+import { ref } from "vue";
 export default {
-
+    setup() {
+      return {
+         email: ref(''),
+         pwd: ref('')
+      }
+    }
 }
 </script>
 <style scoped>

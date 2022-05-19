@@ -10,18 +10,23 @@
                Complete your registration with
             </div> <br>
 
-               <q-input outlined  v-model="ph" type="password" placeholder="Password" :dense="dense" /> <br>
+              <form >
+               <q-input outlined  v-model="psw" type="password" placeholder="Password" :dense="dense" /> <br>
+              </form>
                <q-btn style="width: 100%;" padding="18px" color="secondary" label="Send Message" />
-
-
          </div>
       </div>
     </div>
   </div>
 </template>
 <script>
+import { ref } from "vue";
 export default {
-
+    setup() {
+      return{
+        psw: ref('')
+      }
+    }
 }
 </script>
 <style scoped>

@@ -10,25 +10,32 @@
 
            <!-- inputlar boshlanishi -->
              <div class="q-mt-lg">
-               <q-input type="email" v-model="email" label="Email" :dense="dense" />
+               <form>
+                  <q-input type="email" v-model="email" label="Email" :dense="dense" />
+               </form>
              </div>
+
              <div class="q-mt-xl">
-               <q-input type="password" v-model="pwd" label="Password" :dense="dense" />
+                <form >
+                   <q-input type="password" v-model="pwd" label="Password" :dense="dense" />
+                </form>
              </div>
+
            <!-- inputlar tugashi -->
            <div class=" q-mt-xl row  justify-between items-center content-center">
-              <q-checkbox  v-model="teal" label="Я не робот" color="teal"/>
+                <q-checkbox  v-model="teal" label="Я не робот" color="teal"/>
               <div class="text-weight-regular">
                   Frgeten Password
               </div>
            </div>
+
                <div class="q-mt-xl row justify-end">
-                 <q-btn style="width: 100%;" padding="18px" color="secondary" label="Send Message" />
+                  <q-btn style="width: 100%;" padding="18px" color="secondary" label="Send Message" />
                </div>
                <div class="q-mt-lg text-h6 text-weight-regular">
                   Already a member?
                  <a class="a " href="">Singn Up</a>
-             </div>
+              </div>
 
         </div>
       </div>

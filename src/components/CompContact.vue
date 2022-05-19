@@ -3,23 +3,33 @@
         <!-- bosh sarlavha -->
       <div class="container row justify-center content-center">
         <div class="content bg-grey-1">
-          <!-- inputlar boshlanishi -->
             <div class="contact text-h4 text-weight-bolder">
                 Contact Us
             </div>
-            <div class="q-mt-xl row  justify-between items-start content-start">
-                <q-input type="text" class="input-text" v-model="text" label="Name" :dense="dense" />
-                 <q-input  type="email" class="input-text" v-model="email" label="Email" :dense="dense" />
-            </div>
-              <div class="q-mt-xl">
-                <q-input  v-model="Subject" label="Subject" :dense="dense" />
+            <!-- inputlar boshlanishi -->
+
+                <form>
+                  <div class="q-mt-xl row  justify-between items-start content-start">
+                    <q-input type="text" class="input-text" v-model="text" label="Name" :dense="dense" />
+                    <q-input  type="email" class="input-text" v-model="email" label="Email" :dense="dense" />
+                  </div>
+                </form>
+
+                <div class="q-mt-xl">
+                  <form>
+                    <q-input  v-model="Subject" label="Subject" :dense="dense" />
+                  </form>
+                </div>
+
+               <div class="q-mt-xl">
+                  <form>
+                   <q-input  type="textarea"  v-model="textarea" label="Message" :dense="dense" />
+                  </form>
               </div>
-              <div class="q-mt-xl">
-                <q-input  type="textarea"  v-model="textarea" label="Message" :dense="dense" />
-              </div>
-              <div class="q-mt-xl row justify-end">
-                 <q-btn color="secondary" label="Send Message" />
-              </div>
+
+               <div class="q-mt-xl row justify-end">
+                  <q-btn color="secondary" label="Send Message" />
+               </div>
               <!-- inputlar tugashi -->
         </div>
       </div>
