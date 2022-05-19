@@ -1,25 +1,29 @@
 <template>
   <div>
+        <!-- bosh sarlavha -->
       <div class="container row justify-center content-center">
         <div class="content bg-grey-1">
+          <!-- inputlar boshlanishi -->
             <div class="contact text-h4 text-weight-bolder">
                 Contact Us
             </div>
             <div class="q-mt-xl row  justify-between items-start content-start">
-                  <q-input type="text" class="input-text" v-model="text" label="Name" :dense="dense" />
-                  <q-input type="email" class="input-text" v-model="email" label="Email" :dense="dense" />
+                <q-input type="text" class="input-text" v-model="text" label="Name" :dense="dense" />
+                 <q-input  type="email" class="input-text" v-model="email" label="Email" :dense="dense" />
             </div>
               <div class="q-mt-xl">
-                <q-input  v-model="email" label="Subject" :dense="dense" />
+                <q-input  v-model="Subject" label="Subject" :dense="dense" />
               </div>
               <div class="q-mt-xl">
-                <q-input type="textarea"  v-model="text" label="Message" :dense="dense" />
+                <q-input  type="textarea"  v-model="textarea" label="Message" :dense="dense" />
               </div>
               <div class="q-mt-xl row justify-end">
                  <q-btn color="secondary" label="Send Message" />
               </div>
+              <!-- inputlar tugashi -->
         </div>
       </div>
+       <!-- bosh sarlavha tugashi -->
   </div>
 </template>
 <script>
@@ -29,7 +33,8 @@ export default {
     return {
       text: ref(''),
       email: ref(''),
-      ph: ref(''),
+      Subject: ref(''),
+      textarea: ref(''),
       dense: ref(true)
 
     }
@@ -46,6 +51,6 @@ export default {
   height: 550px;
 }
 .input-text{
-  width: 300px;
+  width: 47%;
 }
 </style>

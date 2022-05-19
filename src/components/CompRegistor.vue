@@ -48,7 +48,7 @@
              </div>
                 <!-- inputlar  tugashi -->
 
-              <div class=" q-mt-xl row  justify-between items-start content-start">
+              <div class=" q-mt-xl row  justify-between items-center content-center">
                 <q-checkbox  v-model="teal" label="Я не робот" color="teal" />
                  <q-btn color="red" icon-right="send" label="Register" />
               </div>
